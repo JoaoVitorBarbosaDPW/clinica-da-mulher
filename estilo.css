@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   box-sizing: border-box; /* é utilizado para navegadores antigos, não ocorrer erro, então sempre que iniciar um projeto 
+   devemos adiciona-lo*/
+}
+
+body{
+    margin: 0; /* Margem adicionado 0 para remover as margens e preecher toda area da tela px*/
+    padding: 0; /* padding é uma preenchimento dentro da tag "block" */
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex; /* para deixar a tag flexivel*/
+    justify-content: center ; /* Centralizar com width horizontal, a tag span com o texto clinica das mulheres*/
+    align-items: center;  /* Centralizar com Height vertical, a tag span com o texto clinica das mulheres*/
+    background: #e8aae3; /* utilizar o picker color para pegar as cores exadecimal*/
+    height: 80px; /* Altura da area Hero, area Cabecalho*/
+}
+
+header h1 { /* Usando seletor Filho - Header é a tag pai e span e tag filho*/
+    font-size: 40px; /* Tamanho da Fonte Clinica das Mulheres*/
+    color: white; /* Cor da Fonte*/
+    font-family: 'Dancing Script', cursive; /* Pegar as fonts no " Google Fonts" Não esquecer de import url da fonte @import*/
+    font-weight: normal; /* Grossura espessura da font*/
+}
+/**/
+.hero{
+    display: flex; /* Deixar a Tag flexivel*/
+    justify-content: center; /* Alinhar na horizontal os elementos os blocks, Elementos box-img e box-texta*/
+    align-items: center; /* Alinhar os elementos na vertical os blocks, Elementos box-img e box-texta*/
+    width: 100%; /* Para tag usar 100% da area tela */
+    /*border: 1px solid red; /* Usar para visualizar os blocks na area body visualização usuario, Facilitar a programação*/
+}
+
+.box-img{
+    display: flex; /* Deixar a Tag Flexivel*/
+    justify-content: center; /* Deixa a imagem centralizada*/
+    width: 35%; /* Comprimento, Tamanho em porcentagem, ocupando 35% de 100% da Hero tag Section*/
+   /* border: 1px solid blue; /* Usar para visualizar os blocks na area body visualização usuario, Facilitar a programação*/
+}
+/**/
+.box-text{
+    display: flex;
+    flex-flow: row wrap; /* flex-flow deixa os textos de caixa tudo como se fosse uma linha*/
+    width: 35%; /* Comprimento, Tamanho em porcentagem, ocupando 35% de 100% da Hero tag Section*/
+   /* border: 1px solid green; /* Usar para visualizar os blocks na area body visualização usuario, Facilitar a programação*/
+}
+
+.box-text span{
+    color: gray; /* cor da fonte*/
+    letter-spacing: 5px; /* Espaçamentos das letras do "marca sua consulta"*/
+    text-transform: uppercase; /* Para deixar a fonte maiúscula*/
+}
+
+.box-text h2{
+    font-family: 'DM Sans', sans-serif; /* Tipo de fonte*/
+    font-size: 80px; /* Tamanho da fonte*/
+    color: #ce4ec4; /* cor da fonte*/
+    font-weight: 800px; /* Grossura da fonte */
+    margin-top: 30px; /* Margem do top*/
+    margin-bottom: 30px; /* Margem do bottom*/
+    line-height: 70px; /* distanciamento das palavras*/
+}
+
+.box-text p{
+    color: gray;
+}
+
+.btn-hero{
+    background: #ce4ec4; /* cor do fundo do botão*/
+    padding: 15px 25px; /* paddind para criar espaçamentos dentro do botão*/
+    text-decoration: none; /* Tirar uderline do link que vem padrão da tag bottom*/
+    font-family: 'DM Sans', sans-serif; /* Fonte texto*/
+    color: white; /* Cor da fonte*/
+    border-radius: 5px; /* Criar bordas no botão*/
+    transition: 0.5s all; /* Transição suave do mouse quando passa em cima do botão, */
+    margin-bottom: 30px; /* Espaçamento em baixo do botão*/
+    font-weight: bold; /* Para deixar em negrito*/
+}
+
+.btn-hero:hover{
+    background:#af11a2; /* Cor da fonte para ficar um pouco mais escuro quando mouse passar*/
+    font-size: 18px; /* Tamanho da fonte*/
+
+   /* hover para fazer animação do mouse quando ficar em cima do botão, oque voce quer que aconteça
+   */ 
+}
+
+.box-item{
+    width: 30%; /* largura do box item especialidades*/
+    height: 380px; /* Altura do box item especialidades*/
+    background: rgb(224, 198, 222); /* Cor do fundo especialidades*/
+    margin: 5px; /* margim entre as box items especvialidades*/
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+} 
+
+.especialidades{
+    display: flex; /* Deixar a Tag flexivel*/
+    justify-content: center; /* Alinhar na horizontal os elementos os blocks, Elementos box-img e box-texta*/
+    align-items: center; /* Alinhar os elementos na vertical os blocks, Elementos box-img e box-texta*/
+    flex-flow: row wrap; /* Para deixar o conteudo em linha*/ 
+    width: 80%; /* Para tag usar 100% da area tela */
+    /*border: 1px solid red; /* Usar para visualizar os blocks na area body visualização usuario, Facilitar a programação*/
+    margin-left: 10%;
+}
+
+.m-top{
+    margin-top: 30px;
+}
+
+footer{
+    display: flex; /* Deixar a Tag Flexivel*/
+    justify-content: center; /* Deixar centralizado tag <p> no centro horizontal*/
+    align-items: center; /* Deixar centralizado tag <p> no centro vertical */
+    margin-top: 100px; /* margem top para deixar um espaço da tag anterior bottom */
+    background: #e8aae3; /*cor de fundo  */
+    height: 150px; /* tamanho altura do rodapé*/
+    color: white; /* cor da letra */
+    font-size: 22px; /*  Tamanho da fonte */
+}
+
+.whats{
+    position: fixed; /*Ficar fixo na tela logo whatsaap*/
+    right: 10px; /*10px da direita*/
+    bottom: 10px; /*10px da parte de baixo*/
+}
+/* Media scrren para deixar responsivo o site para rodar em todos os aparelhos e resolução diferentes
+*/
+
+.responsiva{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1200px){
+   .hero{ /*Tag hero aonde está as imgs e textos box*/
+    flex-direction: column-reverse; /*para deixar em coluna e vim primeiro o texto e depois as fotos*/
+   }
+
+   .box-text{
+    flex-flow: column wrap; /*Deixa em coluna em linha*/
+    width: 100%; /*Largura*/
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+   }
+
+   .box-text h2{
+    font-size: 55px;
+   }
+
+   .box-text{
+    text-align: center;
+   }
+
+   .box-img{
+    width: 100%;
+    margin-bottom: 40px;
+   }
+
+   .box-item{
+    width: 100%;
+   }
+
+   footer{
+    font-size: 18px;
+    text-align: center;
+   }
+
+   header h1{
+    font-size: 40px;
+   }
+}

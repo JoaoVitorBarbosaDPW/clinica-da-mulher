@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title> Site simples </title>
+
+</head>
+
+<body>
+<!-- Cabecalho Inicio-->
+    <header>
+        <h1> Clinica da Mulher </h1>
+    </header> 
+<!-- Cabecalho Fim -->
+
+<!-- Conteudo Hero Inicio -->
+    <section class="hero">
+
+        <div class="box-img">
+            <img class="responsiva" id="doutora" src="img/doutora.jpeg"> <!-- Imagem foi obtida no www.pexel.com aonde as imagens não tem direitos autorais,
+             para remover o fundo da imgagem, foi utilizado o site www.removebg.com , e para edição da imagem foi utilizado
+            www.photopea.com que é um codio aberto do photoshop-->
+        </div>
+
+        <div class="box-text">
+            <span> Marque sua Consulta</span>
+            <h2> Saúde plena,<br> Vida serana !</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta eaque esse omnis tempore cum voluptas
+                minus porro dicta. Quasi accusantium, voluptatum laborum nihil ad voluptatibus beatae excepturi minus
+                corporis iusto?</p>
+                <a href="https://api.whatsapp.com/send?phone=551299999999&text=Ol%C3%A1%20!%20Gostaria%20de%20Marcar%20uma%20consulta." class="btn-hero">Marcar Consulta</a>
+        </div>
+
+    </section>
+       
+    <section class="especialidades">
+        <div class="box-item">
+            <h3> Especialidades 1</h3>
+            p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem 
+            architecto doloribus praesentium voluptates delectus quibusdam, hic 
+            inventore expedita officia, beatae dolorum molestiae accusamus itaque 
+            speriores laudantium nobis? Assumenda, recusandae!
+        </div>
+        <div class="box-item">
+            <h3> Especialidades 2</h3>
+            p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem 
+            architecto doloribus praesentium voluptates delectus quibusdam, hic 
+            inventore expedita officia, beatae dolorum molestiae accusamus itaque 
+            speriores laudantium nobis? Assumenda, recusandae!
+        </div>
+        <div class="box-item">
+            <h3> Especialidades 3</h3>
+            p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem 
+            architecto doloribus praesentium voluptates delectus quibusdam, hic 
+            inventore expedita officia, beatae dolorum molestiae accusamus itaque 
+            speriores laudantium nobis? Assumenda, recusandae!
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=551299999999&text=Ol%C3%A1%20!%20Gostaria%20de%20Marcar%20uma%20consulta." class="m-top btn-hero">Marcar Consulta</a>
+    </section>
+
+<!-- Conteudo Hero Fim -->
+
+<!-- Rodapé Hero Inicio -->
+    <footer>
+        <p> 2023 © Clínica da Mulher. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="whats">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=551299999999&text=Ol%C3%A1%20!%20Gostaria%20de%20Marcar%20uma%20consulta.">
+        <img width="50px" src="img/whats.png">
+        </a>
+    </div>
+<!-- Target tag para direcionar para outra pagina-->
+
+<!-- Rodapé  Hero Fim -->
+
+    <script>
+        //PEGAR O ELEMENTO
+        const doutora = document.getElementById('doutora');
+        //EVENTO QUANDO MOUSE ESTIVER POR CIMA DA IMAGEM DA DOUTORA, MOUSEOUVER QUANDO O MOUSE PASSAR EM CIMA
+        doutora.addEventListener('mouseover', function() {
+            doutora.src = "img/doutora2.webp";
+        });
+
+        //EVENTO QUANDO MOUSE ESTIVER POR CIMA DA IMAGEM DA DOUTORA, MOUSE OUT QUANDO O MOUSE SAIR DE CIMA DA IMAGEM
+        doutora.addEventListener('mouseout', function() {
+            doutora.src = "img/doutora.jpeg";
+        });
+
+    </script>
+
+</body>
+
+</html>
